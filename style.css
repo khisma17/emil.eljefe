@@ -107,6 +107,10 @@ a {
   text-align: center;
 }
 
+.user-photo {
+  border: 5px solid #712073;
+}
+
 .intro h3,
 .portfolio h3 {
   margin: 0 0 12px;
