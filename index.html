@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_dark.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Junior developer portfolio</title>
   </head>
@@ -17,57 +17,100 @@
 
     <section class="hero-image">
       <div class="container">
-      <h1 class="heading">Emil Khismatullin</h1>
-      <p>Junior front-end developer</p>
-    </div>
+        <h1 class="heading">Emil Khismatullin</h1>
+        <p>Junior frontend developer</p>
+      </div>
     </section>
-
-    <section class="intro">
-      <div class="container">
-        <h2 class="subheading">That's me<br>
-          (I swear to God that's me)</h2>
+    <section class="section intro">
+      <div class="container intro--container">
         <figure class="user-image">
-          <img src="files/user.jpg" width="300" alt="Это я">
+          <img src="img/user.jpg" width="300" alt="My photo">
         </figure>
         <div>
-          <h3>About me</h3>
-          <p>El jefe. Encantado.</p>
-        </div>
-        <div>
-          <h3>What I do</h3>
-          <p>Just a freshman front-end developer taking one step at a time on my road to success</p>
-        </div>
-        <div class="skills">
-          <h3>My skills</h3>
-          <dl class="skills-list">
-            <dt class="skill-html">HTML</dt>
-            <dd class="level"><div style="width: 60%;">60%</div></dd>
-            <dt class="skill-css">CSS</dt>
-            <dd class="level"><div style="width: 40%;">40%</div></dd>
-          </dl>
+          <div class="skills">
+            <h3>Technical stack</h3>
+            <ul class="skills-list">
+              <li class="skill-html">HTML</li>
+              <li class="skill-css">CSS</li>
+              <li class="skill-js">JavaScript</li>
+            </ul>
+          </div>
+          <div class="languages">
+            <h3>Language skills</h3>
+            <dl class="languages-list">
+              <dt>Russian</dt>
+              <dd class="level"><div style="width: 99.8%;"><span>Native speaker</span></div></dd>
+              <dt>English</dt>
+              <dd class="level"><div style="width: 80%;"><span>B2</span></div></dd>
+              <dt>Polish</dt>
+              <dd class="level"><div style="width: 60%;"><span>B1</span></div></dd>
+              <dt>German</dt>
+              <dd class="level"><div style="width: 40%;"><span>A2</span></div></dd>
+            </dl>
+          </div>
         </div>
       </div>
     </section>
-
-    <section class="portfolio">
+    <section class="section experience">
       <div class="container">
-      <h2 class="subheading">My works</h2>
-      <figure class="project-image">
-        <img src="files/project.jpg" alt="Сайт инструктора Кекса" width="928" height="536">
-      </figure>
-      <h3>Coach Keks website</h3>
-      <p>Simple landing page of a coding school for beginners</p>
-      <a class="button" href="source/project/index.html">Open page</a>
-      <h3>Freshman coder's blog</h3>
-      <p>A blog about learning HTML and CSS</p>
-    </div>
+        <section class="experience--all">
+          <h2 class="subheading">Experience</h2>
+          <dl class="experience--list">
+            <dt>July 2019 – present</dt>
+            <dd>IFRS Consultant, PwC SDC (Katowice)</dd>
+            <dt>October 2017 – June 2019</dt>
+            <dd>Senior Specialist, PwC SDC (Katowice)</dd>
+            <dt>September 2015 – September 2017</dt>
+            <dd>Audit Consultant, PricewaterhouseCoopers Audit (Kazan, Russia)</dd>
+            <dt>May 2014 – August 2015</dt>
+            <dd>SDC Consultant, PricewaterhouseCoopers Audit (Kazan, Russia)</dd>
+            <dt>January 2014 – April 2014</dt>
+            <dd>SDC Intern, PricewaterhouseCoopers Audit (Kazan, Russia)</dd>
+          </dl>
+        </section>
+        <section class="experience--relevant">
+          <h2 class="subheading">Relevant experience</h2>
+          <p>Uhm... Well... Why won't you just look at some of my projects below</p>
+        </section>
+      </div>
     </section>
-
+    <section class="portfolio">
+      <div class="container portfolio--container">
+        <div class="project">
+          <figure class="project-image">
+            <a class="button" href="./technomart/index.html"><img src="./img/technomart.jpg" alt="Technomart website preview" width="538" height="403"></a>
+          </figure>
+          <a class="project--heading" href="./technomart/index.html"><h3>Technomart</h3></a>
+          <p class="project--description">Simple website for an online store of power tools and construction materials.</p>
+        </div>
+        <div class="project">
+          <figure class="project-image">
+            <a class="button" href="./pognali/source/index.html"><img src="./img/pognali.jpg" alt="Let's go website preview" width="1437" height="1078"></a>
+          </figure>
+          <a class="project--heading" href="./pognali/source/index.html"><h3>Let's go!</h3></a>
+          <p class="project--description">Responsive (desktop/tablet/mobile) website of a travel companion searching service.</p>
+        </div>
+        <div class="project">
+          <figure class="project-image">
+            <a class="button" href="./keksobooking/index.html"><img src="./img/keksobooking.png" alt="Keksobooking website preview" width="1079" height="676"></a>
+          </figure>
+          <a class="project--heading" href="./keksobooking/index.html"><h3>Keksobooking</h3></a>
+          <p class="project--description">Housing rental marketplace with ad filtering and form validation functionalities</p>
+        </div>
+        <div class="project">
+          <figure class="project-image">
+            <img class="tba-image" src="./img/more-to-come.png" alt="More to come" width="800" height="600">
+          </figure>
+          <h3>...</h3>
+          <p class="project--description">The best is yet to come</p>
+        </div>
+      </div>
+    </section>
     <footer class="page-footer">
       <div class="container">
         <a class="footer-phone" href="tel:+48511353422">+48 511 353 422</a>
         <a class="footer-email" href="mailto:khisma017@gmail.com">khisma017@gmail.com</a>
-    </div>
+      </div>
     </footer>
   </body>
 </html>
